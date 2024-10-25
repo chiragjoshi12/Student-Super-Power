@@ -12,24 +12,66 @@
                 "id": 1,
                 "name": "Maths",
                 "chapters": [
-                  { "id": 101, "name": "Chapter 1: Basic Algebra" },
-                  { "id": 102, "name": "Chapter 2: Geometry Fundamentals" }
+                  { "id": 101, "name": "1. વાસ્તવિક સંખ્યાઓ" },
+                  { "id": 102, "name": "2. બહુપદીઓ" },
+                  { "id": 103, "name": "3. દ્વિચલ સુરેખ સમીકરણ યુગ્મ" },
+                  { "id": 104, "name": "4. દ્વિઘાત સમીકરણ" },
+                  { "id": 105, "name": "5. સમાંતર શ્રેણી" },
+                  { "id": 106, "name": "6. ત્રિકોણ" },
+                  { "id": 107, "name": "7. યામ ભૂમિતિ" },
+                  { "id": 108, "name": "8. ત્રિકોણમિતિ નો પરિચય" },
+                  { "id": 109, "name": "9. ત્રિકોણમિતિ ના ઉપયોગો" },
+                  { "id": 110, "name": "10. વર્તુળ" },
+                  { "id": 111, "name": "11. વર્તુળ સંબંધિત ક્ષેત્રફળ" },
+                  { "id": 112, "name": "12. પૃષ્ઠફળ અને ઘનફળ" },
+                  { "id": 113, "name": "13. આંકડાશાસ્ત્ર" },
+                  { "id": 114, "name": "14. સંભાવના" }
                 ]
               },
               {
                 "id": 2,
                 "name": "Science",
                 "chapters": [
-                  { "id": 201, "name": "Chapter 1: Fun with Biology" },
-                  { "id": 202, "name": "Chapter 2: Let's Learn Physics" }
+                  { "id": 201, "name": "1. રાસાયણિક પ્રક્રિયાઓ અને સમીકરણો" },
+                  { "id": 202, "name": "2. એસિડ બેઇઝ અને ક્ષાર" },
+                  { "id": 203, "name": "3. ધાતુઓ અને અધાતુઓ" },
+                  { "id": 204, "name": "4. કાર્બન અને તેના સંયોજનો" },
+                  { "id": 205, "name": "5. જૈવિક ક્રિયાઓ" },
+                  { "id": 206, "name": "6. નિયંત્રણ અને સંકલન" },
+                  { "id": 207, "name": "7. સજીવો કેવી રીતે પ્રજનન કરે છે?" },
+                  { "id": 208, "name": "8. આનુવંશિકતા" },
+                  { "id": 209, "name": "9. પ્રકાશ પરાવર્તન અને વક્રીભવન" },
+                  { "id": 210, "name": "10. માનવ આંખ અને રંગબેરંગી દુનિયા" },
+                  { "id": 211, "name": "11. વિદ્યુત" },
+                  { "id": 212, "name": "12. વિદ્યુત પ્રવાહની ચુંબકીય અસરો" },
+                  { "id": 213, "name": "13. આપણું પર્યાવરણ" }
                 ]
               },
               {
                 "id": 3,
                 "name": "Social Science",
                 "chapters": [
-                  { "id": 301, "name": "Chapter 1: Introduction to History" },
-                  { "id": 302, "name": "Chapter 2: Basics of Geography" }
+                  { "id": 301, "name": "1. ભારતનો વારસો" },
+                  { "id": 302, "name": "2. ભારતનો સાંસ્કૃતિક વારસો પરંપરાઓ હસ્ત અને લલિતકાળા" },
+                  { "id": 303, "name": "3. ભારતનો સાંસ્કૃતિક વારસો શિલ્પ અને સ્થાપત્ય" },
+                  { "id": 304, "name": "4. ભારતનો સાહિત્યિક વારસો" },
+                  { "id": 305, "name": "5. ભારતનો વિજ્ઞાન અને ટેકનોલોજીનો વારસો" },
+                  { "id": 306, "name": "6. ભારતના સાંસ્કૃતિક વારસાના સ્થળો" },
+                  { "id": 307, "name": "7. આપણા વારસાનું જતન" },
+                  { "id": 308, "name": "8. કુદરતી સંસાધનો8. કુદરતી સંસાધનો" },
+                  { "id": 309, "name": "9. વન અને વન્યજીવન સંસાધન" },
+                  { "id": 310, "name": "10. ભારત:કૃષિ" },
+                  { "id": 311, "name": "11. ભારત જળ સંસાધન" },
+                  { "id": 312, "name": "12. ભારત ખનીજ અને શક્તિના સંસાધનો" },
+                  { "id": 313, "name": "13. ઉત્પાદન ઉદ્યોગો" },
+                  { "id": 314, "name": "14. પરિવહન સંદેશા વ્યવહાર અને વ્યાપાર" },
+                  { "id": 315, "name": "15. આર્થિક વિકાસ15. આર્થિક વિકાસ" },
+                  { "id": 316, "name": "16. આર્થિક ઉદારીકરણ અને વૈશ્વિકીકરણ" },
+                  { "id": 317, "name": "17. આર્થિક સમસ્યાઓ અને પડકારો:ગરીબી અને બેરોજગારી" },
+                  { "id": 318, "name": "18. ભાવ વધારો અને ગ્રાહક જાગૃતિ" },
+                  { "id": 319, "name": "19. માનવ વિકાસ" },
+                  { "id": 320, "name": "20. ભારતની સામાજિક સમસ્યાઓ અને પડકારો" },
+                  { "id": 321, "name": "21. સામાજિક પરિવર્તન" }
                 ]
               }
             ]
@@ -42,16 +84,175 @@
                 "id": 1,
                 "name": "Biology",
                 "chapters": [
-                  { "id": 401, "name": "Chapter 1: Cell Structure" },
-                  { "id": 402, "name": "Chapter 2: Genetics" }
+                  { "id": 401, "name": "1. સજીવ વિશ્વ" },
+                  { "id": 402, "name": "2. જૈવિક વર્ગીકરણ" },
+                  { "id": 403, "name": "3. વનસ્પતિ સૃષ્ટિ" },
+                  { "id": 404, "name": "4. પ્રાણી સૃષ્ટિ" },
+                  { "id": 405, "name": "5. સપુષ્પી વનસ્પતિ ની બાહ્યકાર વિદ્યા" },
+                  { "id": 406, "name": "6. સબ પુષ્પી વનસ્પતિઓની અંતઃસ્થ રચના" },
+                  { "id": 407, "name": "7. પ્રાણીઓમાં રચનાકીય આયોજન" },
+                  { "id": 408, "name": "8. કોષ જીવનનો એકમ" },
+                  { "id": 409, "name": "9. જૈવ અણુઓ" },
+                  { "id": 410, "name": "10. કોષચક્ર અને કોષ વિભાજન" },
+                  { "id": 411, "name": "11. ઉચ્ચકક્ષાની વનસ્પતિઓમાં પ્રકાશસંશ્લેષણ" },
+                  { "id": 412, "name": "12. વનસ્પતિઓમાં શ્વસન" },
+                  { "id": 413, "name": "13. વનસ્પતિ વૃદ્ધિ અને વિકાસ" },
+                  { "id": 414, "name": "14. શ્વાસોચ્છવાસ અને વાયુ વિનિમય" },
+                  { "id": 415, "name": "15. દેહ જળ અને પરિવર્તન" },
+                  { "id": 416, "name": "16. ઉત્સર્ગ પેદાશો અને તેનો નિકાલ" },
+                  { "id": 417, "name": "17. પ્રચલન અને હલનચલન" },
+                  { "id": 418, "name": "18. ચેતાકીય નિયંત્રણ અને સહનિયમન" },
+                  { "id": 419, "name": "19. રાસાયણિક સહનિયમન અને સંકલન" }
                 ]
               },
               {
                 "id": 2,
                 "name": "Chemistry",
                 "chapters": [
-                  { "id": 501, "name": "Chapter 1: Organic Chemistry Basics" },
-                  { "id": 502, "name": "Chapter 2: Inorganic Chemistry" }
+                  { "id": 501, "name": "Chapter 1: રસાયણ વિજ્ઞાન ની કેટલીક પાયાની સંકલ્પનાઓ" },
+                  { "id": 502, "name": "Chapter 2: પરમાણુનું બંધારણ" },
+                  { "id": 503, "name": "Chapter 3: તત્વોનું વર્ગીકરણ અને ગુણધર્મોમાં આવર્તીતા" },
+                  { "id": 504, "name": "Chapter 4: રાસાયણિક બંધન અને આણ્વીય રચના" },
+                  { "id": 505, "name": "Chapter 5: ઉષ્માગતિશાસ્ત્ર" },
+                  { "id": 506, "name": "Chapter 6: સંતુલન" },
+                  { "id": 507, "name": "Chapter 7: રેડોક્ષ પ્રક્રિયાઓ" },
+                  { "id": 508, "name": "Chapter 8: કાર્બનિક રસાયણ વિજ્ઞાન કેટલાક પાયાના સિદ્ધાંતો અને પદ્ધતિઓ" },
+                  { "id": 509, "name": "Chapter 9: હાઇડ્રોકાર્બન" }
+                ]
+              },
+              {
+                "id": 2,
+                "name": "Chemistry",
+                "chapters": [
+                  { "id": 501, "name": "Chapter 1: રસાયણ વિજ્ઞાન ની કેટલીક પાયાની સંકલ્પનાઓ" },
+                  { "id": 502, "name": "Chapter 2: પરમાણુનું બંધારણ" },
+                  { "id": 503, "name": "Chapter 3: તત્વોનું વર્ગીકરણ અને ગુણધર્મોમાં આવર્તીતા" },
+                  { "id": 504, "name": "Chapter 4: રાસાયણિક બંધન અને આણ્વીય રચના" },
+                  { "id": 505, "name": "Chapter 5: ઉષ્માગતિશાસ્ત્ર" },
+                  { "id": 506, "name": "Chapter 6: સંતુલન" },
+                  { "id": 507, "name": "Chapter 7: રેડોક્ષ પ્રક્રિયાઓ" },
+                  { "id": 508, "name": "Chapter 8: કાર્બનિક રસાયણ વિજ્ઞાન કેટલાક પાયાના સિદ્ધાંતો અને પદ્ધતિઓ" },
+                  { "id": 509, "name": "Chapter 9: હાઇડ્રોકાર્બન" }
+                ]
+              },              
+              {
+                "id": 3,
+                "name": "Maths",
+                "chapters": [
+                  { "id": 601, "name": "1. ગણ" },
+                  { "id": 602, "name": "2. સંબંધ અને વિધેયો" },
+                  { "id": 603, "name": "3. ત્રિકોણમિતીય વિધેયો" },
+                  { "id": 604, "name": "4. સંકર સંખ્યા ઓ અને દ્વિઘાત સમીકરણો" },
+                  { "id": 605, "name": "5. સુરેખ અસમતાઓ" },
+                  { "id": 606, "name": "6. ક્રમચય અને સંચય" },
+                  { "id": 607, "name": "7. દ્વિપદી પ્રમય" },
+                  { "id": 608, "name": "8. શ્રેણી અને શ્રેઢી" },
+                  { "id": 609, "name": "9. રેખાઓ" },
+                  { "id": 610, "name": "10. શાંકવો" },
+                  { "id": 611, "name": "11. ત્રિપરિમાણીય ભૂમિતિ નો પરિચય" },
+                  { "id": 612, "name": "12. લક્ષ અને વિકલન" },
+                  { "id": 613, "name": "13. આંકડાશાસ્ત્ર" },
+                  { "id": 614, "name": "14. સંભાવના" }
+                ]
+              },              
+              {
+                "id": 4,
+                "name": "Physics",
+                "chapters": [
+                  { "id": 701, "name": "1. એકમો અને માપન" },
+                  { "id": 702, "name": "2. સુરેખ પથ પર ગતિ" },
+                  { "id": 703, "name": "3. સમતલમાં ગતિ" },
+                  { "id": 704, "name": "4. ગતિના નિયમો" },
+                  { "id": 705, "name": "5. કાર્ય ઊર્જા અને પાવર" },
+                  { "id": 706, "name": "6. કણોના તંત્ર અને ચાકગતિ" },
+                  { "id": 707, "name": "7. ગુરુત્વાકર્ષણ" },
+                  { "id": 708, "name": "8. ઘન પદાર્થના યાંત્રિક ગુણધર્મો" },
+                  { "id": 709, "name": "9. તરલના યાંત્રિક ગુણધર્મો" },
+                  { "id": 710, "name": "10. દ્રવ્યના ઉષ્મીય ગુણધર્મો" },
+                  { "id": 711, "name": "11. થર્મોડાયનેમિક્સ" },
+                  { "id": 712, "name": "12. ગતિવાદ" },
+                  { "id": 713, "name": "13. દોલનો" },
+                  { "id": 714, "name": "14. તરંગો" }                  
+                ]
+              }
+            ]
+          },
+          {
+            "id": 12,
+            "name": "12",
+            "subjects": [
+              {
+                "id": 1,
+                "name": "Maths",
+                "chapters": [
+                  { "id": 801, "name": "1. સંબંધ અને વિધેય" },
+                  { "id": 802, "name": "2. ત્રિકોણમિતીય પ્રતિવિધેયો" },
+                  { "id": 803, "name": "3. શ્રેણિક" },
+                  { "id": 804, "name": "4. નિશ્ચાયક" },
+                  { "id": 805, "name": "5. સાતત્ય અને વિકલનીયતા" },
+                  { "id": 806, "name": "6. વિકલીત ના ઉપયોગો" },
+                  { "id": 807, "name": "7. સંકલન" },
+                  { "id": 808, "name": "8. સંકલન નો ઉપયોગ" },
+                  { "id": 809, "name": "9. વિકલ સમીકરણો" },
+                  { "id": 810, "name": "10. સદીશ બીજ ગણિત" },
+                  { "id": 811, "name": "11. ત્રિપરિમાણીય ભૂમિતિ" },
+                  { "id": 812, "name": "12. સુરેખ આયોજન" },
+                  { "id": 813, "name": "13. સંભાવના" }                  
+                ]
+              },
+              {
+                "id": 2,
+                "name": "Physics ",
+                "chapters": [
+                  { "id": 901, "name": "Chapter 1: વિદ્યુતભારો અને ક્ષેત્રો" },
+                  { "id": 902, "name": "Chapter 2: સ્થિત વિદ્યુત સ્થિતિમાન અને કેપેસિટન્સ" },
+                  { "id": 903, "name": "Chapter 3: પ્રવાહ વિદ્યુત" },
+                  { "id": 904, "name": "Chapter 4: ગતિમાન વિદ્યુતભારો અને ચુંબકત્વ" },
+                  { "id": 905, "name": "Chapter 5: ચુંબકત્વ અને દ્રવ્ય" },
+                  { "id": 906, "name": "Chapter 6: વિદ્યુત ચુંબકીય પ્રેરણ" },
+                  { "id": 907, "name": "Chapter 7: પ્રત્યાવર્તી પ્રવાહ" },
+                  { "id": 908, "name": "Chapter 8: વિદ્યુત ચુંબકીય તરંગો" },
+                  { "id": 909, "name": "Chapter 9: કિરણ પ્રકાશ શાસ્ત્ર અને પ્રકાશીય ઉપકરણ" },
+                  { "id": 910, "name": "Chapter 10: તરંગ પ્રકાશ શાસ્ત્ર" },
+                  { "id": 911, "name": "Chapter 11: વિકિરણ અને દ્રવ્યની દ્વેત પ્રકૃતિ" },
+                  { "id": 912, "name": "Chapter 12: પરમાણુઓ" },
+                  { "id": 913, "name": "Chapter 13: ન્યુક્લિયસ" },
+                  { "id": 914, "name": "Chapter 14: સેમિકન્ડક્ટર ઇલેક્ટ્રોનિક્સ: દ્રવ્ય રચનાઓ અને સાદા પરિપથો" }                  
+                ]
+              },             
+              {
+                "id": 3,
+                "name": "Chemistry",
+                "chapters": [
+                  { "id": 1001, "name": "Chapter 1: દ્રાવણો" },
+                  { "id": 1002, "name": "Chapter 2: વિધુત રસાયણ વિજ્ઞાન" },
+                  { "id": 1003, "name": "Chapter 3: રસાયણ ગતિકી" },
+                  { "id": 1004, "name": "Chapter 4: ડી અને એફ વિભાગના તત્વો" },
+                  { "id": 1005, "name": "Chapter 5: સવર્ગ સંયોજનો" },
+                  { "id": 1006, "name": "Chapter 6: હેલો આલ્કેન અને હેલો એરીન સંયોજનો" },
+                  { "id": 1007, "name": "Chapter 7: આલ્કોહોલ ફીનોલ અને ઇથર સંયોજનો" },
+                  { "id": 1008, "name": "Chapter 8: આલ્ડીહાઇડ, કીટોન અને કાર્બોક્સિલિક એસિડ સંયોજનો" },
+                  { "id": 1009, "name": "Chapter 9: એમાઇન સંયોજનો" },
+                  { "id": 1010, "name": "Chapter 10: જૈવિક અણુઓ" }                  
+                ]
+              },
+              {
+                "id": 4,
+                "name": "Biology ",
+                "chapters": [
+                  { "id": 1101, "name": "1. સપુષ્પી વનસ્પતિઓમાં લિંગી પ્રજનન" },
+                  { "id": 1102, "name": "2. માનવ પ્રજનન" },
+                  { "id": 1103, "name": "3. પ્રજનનિક સ્વાસ્થ્ય" },
+                  { "id": 1104, "name": "4. આગવંશિકતા અને ભિન્નતાના સિદ્ધાંતો" },
+                  { "id": 1105, "name": "5. અનુવારસતા નો આણવીય આધાર" },
+                  { "id": 1106, "name": "6. ઉદવિકાસ" },
+                  { "id": 1107, "name": "7. માનવ સ્વાસ્થ્ય અને રોગો" },
+                  { "id": 1108, "name": "8. માનવ કલ્યાણમાં સૂક્ષ્મ જીવો" },
+                  { "id": 1109, "name": "9. બાયોટેકનોલોજી: સિદ્ધાંતો અને પ્રક્રિયાઓ" },
+                  { "id": 1110, "name": "10. બાયોટેકનોલોજી અને તેના પ્રયોજનો" },
+                  { "id": 1111, "name": "11. સજીવોની અને વસ્તી" },
+                  { "id": 1112, "name": "12. નિવસનતંત્ર" },
+                  { "id": 1113, "name": "13. જૈવ વિવિધતા અને સંરક્ષણ" }                  
                 ]
               }
             ]
@@ -70,16 +271,232 @@
                 "id": 1,
                 "name": "Maths",
                 "chapters": [
-                  { "id": 101, "name": "Chapter 1: Basic Algebra" },
-                  { "id": 102, "name": "Chapter 2: Geometry Fundamentals" }
+                  { "id": 101, "name": "1. Real Numbers" },
+                  { "id": 102, "name": "2. Polynomials" },
+                  { "id": 103, "name": "3. Binary linear equation pair" },
+                  { "id": 104, "name": "4. Binomial Equation" },
+                  { "id": 105, "name": "5. Parallel Series" },
+                  { "id": 106, "name": "6. Triangle" },
+                  { "id": 107, "name": "7. Yam Geometry" },
+                  { "id": 108, "name": "8. Introduction to Trigonometry" },
+                  { "id": 109, "name": "9. Uses of Trigonometry" },
+                  { "id": 110, "name": "10. Circle" },
+                  { "id": 111, "name": "11. Area relative to a circle" },
+                  { "id": 112, "name": "12. Area and Volume" },
+                  { "id": 113, "name": "13. Statistics" },
+                  { "id": 114, "name": "14. Probability" }
                 ]
               },
               {
                 "id": 2,
                 "name": "Science",
                 "chapters": [
-                  { "id": 201, "name": "Chapter 1: Fun with Biology" },
-                  { "id": 202, "name": "Chapter 2: Let's Learn Physics" }
+                  { "id": 201, "name": "1. Chemical Processes and Equations" },
+                  { "id": 202, "name": "2. Acid Bases and Salts" },
+                  { "id": 203, "name": "3. Metals and Non-Metals" },
+                  { "id": 204, "name": "4. Carbon and its compounds" },
+                  { "id": 205, "name": "5. Biological Actions" },
+                  { "id": 206, "name": "6. Control and Coordination" },
+                  { "id": 207, "name": "7. How do organisms reproduce?" },
+                  { "id": 208, "name": "8. Genetics" },
+                  { "id": 209, "name": "9. Light reflection and refraction" },
+                  { "id": 210, "name": "10. The human eye and the colorful world" },
+                  { "id": 211, "name": "11. Vidyut" },
+                  { "id": 212, "name": "12. Magnetic Effects of Electric Current" },
+                  { "id": 213, "name": "13. Our Environment" }
+                ]
+              },
+              {
+                "id": 3,
+                "name": "Social Science",
+                "chapters": [
+                  { "id": 301, "name": "1. Heritage of India" },
+                  { "id": 302, "name": "2. Cultural Heritage of India Traditions Hasta and Lalitkala" },
+                  { "id": 303, "name": "3. Cultural Heritage Sculpture and Architecture of India" },
+                  { "id": 304, "name": "4. Literary Heritage of India" },
+                  { "id": 305, "name": "5. Science and Technology Heritage of India" },
+                  { "id": 306, "name": "6. Cultural Heritage Sites of India" },
+                  { "id": 307, "name": "7. Preserving our heritage" },
+                  { "id": 308, "name": "8. Natural Resources8. Natural Resources" },
+                  { "id": 309, "name": "9. Forest and Wildlife Resources" },
+                  { "id": 310, "name": "10. India: Agriculture" },
+                  { "id": 311, "name": "11. India Water Resources" },
+                  { "id": 312, "name": "12. Mineral and Energy Resources of India" },
+                  { "id": 313, "name": "13. Manufacturing Industries" },
+                  { "id": 314, "name": "14. TRANSPORT MESSAGE TRANSACTIONS AND COMMERCE" },
+                  { "id": 315, "name": "15. Economic Development15. Economic Development" },
+                  { "id": 316, "name": "16. Economic Liberalization and Globalization" },
+                  { "id": 317, "name": "17. Economic Problems and Challenges: Poverty and Unemployment" },
+                  { "id": 318, "name": "18. Price increase and consumer awareness" },
+                  { "id": 319, "name": "19. Human Development" },
+                  { "id": 320, "name": "20. Social Problems and Challenges of India" },
+                  { "id": 321, "name": "21. Social Change" }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 11,
+            "name": "11",
+            "subjects": [
+              {
+                "id": 1,
+                "name": "Biology",
+                "chapters": [
+                  { "id": 401, "name": "1. Living World" },
+                  { "id": 402, "name": "2. Biological Classification" },
+                  { "id": 403, "name": "3. Vegetation" },
+                  { "id": 404, "name": "4. Fauna" },
+                  { "id": 405, "name": "5. Phytobiology of flowering plants" },
+                  { "id": 406, "name": "6. Internal structure of sub-flowering plants" },
+                  { "id": 407, "name": "7. Structural Planning in Animals" },
+                  { "id": 408, "name": "8. Unit of cell life" },
+                  { "id": 409, "name": "9. Biomolecules" },
+                  { "id": 410, "name": "10. Cell cycle and cell division" },
+                  { "id": 411, "name": "11. Photosynthesis in higher plants" },
+                  { "id": 412, "name": "12. Respiration in Plants" },
+                  { "id": 413, "name": "13. Plant Growth and Development" },
+                  { "id": 414, "name": "14. Respiration and Air Exchange" },
+                  { "id": 415, "name": "15. Body water and transformation" },
+                  { "id": 416, "name": "16. Emissions and their disposal" },
+                  { "id": 417, "name": "17. Prevalence and movement" },
+                  { "id": 418, "name": "18. Neural Control and Coregulation" },
+                  { "id": 419, "name": "19. Chemical coordination and coordination" }
+                ]
+              },
+              {
+                "id": 2,
+                "name": "Chemistry",
+                "chapters": [
+                  { "id": 501, "name": "Chapter 1: Some Basic Concepts of Chemistry" },
+                  { "id": 502, "name": "Chapter 2: Structure of the Atom" },
+                  { "id": 503, "name": "Chapter 3: Classification of elements and manipulation of properties" },
+                  { "id": 504, "name": "Chapter 4: Chemical Bonding and Molecular Structure" },
+                  { "id": 505, "name": "Chapter 5: Thermodynamics" },
+                  { "id": 506, "name": "Chapter 6: Balance" },
+                  { "id": 507, "name": "Chapter 7: Redox Processes" },
+                  { "id": 508, "name": "Chapter 8: Some Basic Principles and Methods of Organic Chemistry" },
+                  { "id": 509, "name": "Chapter 9: Hydrocarbons" }
+                ]
+              },          
+              {
+                "id": 3,
+                "name": "Maths",
+                "chapters": [
+                  { "id": 601, "name": "1. Gana" },
+                  { "id": 602, "name": "2. Relationship and Functions" },
+                  { "id": 603, "name": "3. Trigonometric Functions" },
+                  { "id": 604, "name": "4. Hybrid Numbers and Quadratic Equations" },
+                  { "id": 605, "name": "5. Line inequalities" },
+                  { "id": 606, "name": "6. Permutation and Accumulation" },
+                  { "id": 607, "name": "7. Binomial Proposition" },
+                  { "id": 608, "name": "8. Series and Shredhi" },
+                  { "id": 609, "name": "9. Lines" },
+                  { "id": 610, "name": "10. Shanko" },
+                  { "id": 611, "name": "11. Introduction to Three-Dimensional Geometry" },
+                  { "id": 612, "name": "12. Aims and Calculations" },
+                  { "id": 613, "name": "13. Statistics" },
+                  { "id": 614, "name": "14. Probability" }
+                ]
+              },              
+              {
+                "id": 4,
+                "name": "Physics",
+                "chapters": [
+                  { "id": 701, "name": "1. Units and Measurements" },
+                  { "id": 702, "name": "2. Motion on a smooth path" },
+                  { "id": 703, "name": "3. Motion in plane" },
+                  { "id": 704, "name": "4. Laws of Motion" },
+                  { "id": 705, "name": "5. Work energy and power" },
+                  { "id": 706, "name": "6. Mechanisms and motion of particles" },
+                  { "id": 707, "name": "7. Gravity" },
+                  { "id": 708, "name": "8. Mechanical properties of solids" },
+                  { "id": 709, "name": "9. Mechanical properties of liquids" },
+                  { "id": 710, "name": "10. Thermal properties of matter" },
+                  { "id": 711, "name": "11. Thermodynamics" },
+                  { "id": 712, "name": "12. Kinism" },
+                  { "id": 713, "name": "13. Swing" },
+                  { "id": 714, "name": "14. Waves" }              
+                ]
+              }
+            ]
+          },
+          {
+            "id": 12,
+            "name": "12",
+            "subjects": [
+              {
+                "id": 1,
+                "name": "Maths",
+                "chapters": [
+                  { "id": 801, "name": "1. Relationship and Function" },
+                  { "id": 802, "name": "2. Trigonometric functions" },
+                  { "id": 803, "name": "3. Shrenik" },
+                  { "id": 804, "name": "4. Decisive" },
+                  { "id": 805, "name": "5. Continuity and Disruptibility" },
+                  { "id": 806, "name": "6. Uses of Dissociation" },
+                  { "id": 807, "name": "7. Compilation" },
+                  { "id": 808, "name": "8. Use of integration" },
+                  { "id": 809, "name": "9. Wical Equations" },
+                  { "id": 810, "name": "10. Centennial Seed Math" },
+                  { "id": 811, "name": "11. Three-Dimensional Geometry" },
+                  { "id": 812, "name": "12. Surekh Planning" },
+                  { "id": 813, "name": "13. Probability" }              
+                ]
+              },
+              {
+                "id": 2,
+                "name": "Physics ",
+                "chapters": [
+                  { "id": 901, "name": "Chapter 1: Charges and Fields" },
+                  { "id": 902, "name": "Chapter 2: Electrostatic Constants and Capacitance" },
+                  { "id": 903, "name": "Chapter 3: Current and Electricity" },
+                  { "id": 904, "name": "Chapter 4: Moving Charges and Magnetism" },
+                  { "id": 905, "name": "Chapter 5: Magnetism and Matter" },
+                  { "id": 906, "name": "Chapter 6: Electromagnetic Induction" },
+                  { "id": 907, "name": "Chapter 7: Reverse Flow" },
+                  { "id": 908, "name": "Chapter 8: Electromagnetic Waves" },
+                  { "id": 909, "name": "Chapter 9: Ray Optics and Optical Devices" },
+                  { "id": 910, "name": "Chapter 10: Wave Light Science" },
+                  { "id": 911, "name": "Chapter 11: The Dual Nature of Radiation and Matter" },
+                  { "id": 912, "name": "Chapter 12: Molecules" },
+                  { "id": 913, "name": "Chapter 13: Nucleus" },
+                  { "id": 914, "name": "Chapter 14: Semiconductor Electronics: Material Structures and Simple Circuits" }              
+                ]
+              },             
+              {
+                "id": 3,
+                "name": "Chemistry",
+                "chapters": [
+                  { "id": 1001, "name": "Chapter 1: Solutions" },
+                  { "id": 1002, "name": "Chapter 2: Electrochemistry" },
+                  { "id": 1003, "name": "Chapter 3: Chemical Kinetics" },
+                  { "id": 1004, "name": "Chapter 4: Elements of Sections D and F" },
+                  { "id": 1005, "name": "Chapter 5: Heavenly Compounds" },
+                  { "id": 1006, "name": "Chapter 6: Haloalkane and Haloarene Compounds" },
+                  { "id": 1007, "name": "Chapter 7: Alcohol Phenol and Ether Compounds" },
+                  { "id": 1008, "name": "Chapter 8: Aldehyde, Ketone and Carboxylic Acid Compounds" },
+                  { "id": 1009, "name": "Chapter 9: Amine Compounds" },
+                  { "id": 1010, "name": "Chapter 10: Biological Molecules" }               
+                ]
+              },
+              {
+                "id": 4,
+                "name": "Biology ",
+                "chapters": [
+                  { "id": 1101, "name": "1. Sexual reproduction in flowering plants" },
+                  { "id": 1102, "name": "2. Human Reproduction" },
+                  { "id": 1103, "name": "3. Reproductive Health" },
+                  { "id": 1104, "name": "4. Principles of Heredity and Variation" },
+                  { "id": 1105, "name": "5. Molecular Basis of Heredity" },
+                  { "id": 1106, "name": "6. Development" },
+                  { "id": 1107, "name": "7. Human Health and Diseases" },
+                  { "id": 1108, "name": "8. Microorganisms in Human Welfare" },
+                  { "id": 1109, "name": "9. Biotechnology: Principles and Processes" },
+                  { "id": 1110, "name": "10. Biotechnology and its applications" },
+                  { "id": 1111, "name": "11. Organisms and populations" },
+                  { "id": 1112, "name": "12. Nivasanantra" },
+                  { "id": 1113, "name": "13. Biodiversity and Conservation" }              
                 ]
               }
             ]

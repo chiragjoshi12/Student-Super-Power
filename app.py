@@ -43,17 +43,17 @@ def get_chapters():
     # Find language
     language = next((lang for lang in data["languages"] if lang["name"] == language_id), None)
     if not language:
-        return {"error":f"Language with ID {language_id} not found."}
+        return {"error":f"{language_id} not found."}
     
     # Find standard
     standard = next((std for std in language["standards"] if std["id"] == standard_id), None)
     if not standard:
-        return {"error":f"Standard with ID {standard_id} not found in language ID {language_id}."}
+        return {"error":f"{standard_id} not found in {language_id} language."}
     
     # Find subject
     subject = next((sub for sub in standard["subjects"] if sub["name"] == subject_id), None)
     if not subject:
-        return {"error":f"Subject with ID {subject_id} not found in standard ID {standard_id} of language ID {language_id}."}
+        return {"error":f"{subject_id} not found."}
     
     return subject["chapters"]
 

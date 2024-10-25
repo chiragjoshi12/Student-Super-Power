@@ -30,6 +30,7 @@ to_know_task = Task(
     agent=to_know_agent
 )
 
+# Learning Tracker Agent
 def learning_tracker_agent(standard, subject, chapter):
     # Learning Score Tracker Agents
     learning_tracker_agent = Agent(
@@ -62,6 +63,7 @@ def learning_tracker_agent(standard, subject, chapter):
     result = crew.kickoff()
     return result
 
+# Roadmap Generator Agent
 def roadmap_generator_agent(learning_score, student_details):
     roadmap_agent = Agent(
         role="Personalized Roadmap Creator",
@@ -93,3 +95,4 @@ def roadmap_generator_agent(learning_score, student_details):
 
     result = crew.kickoff()
     return result
+
