@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from crewai import Crew, Process
-from agents import to_know_task, to_know_agent
+from agents import *
 import json
 
 app = Flask(__name__)
@@ -42,6 +42,14 @@ def call_toKnow_agent():
     result = crew.kickoff()
     return jsonify({"response": str(result)})
 
+@app.route('/learning-score-tracker', methods=['POST'])
+def call_learning_score_tracker_agent():
+    standard = request.json['standard']
+    subject = request.json['subject']
+    chapter = request.json['chapter']
+    
+    response = learning_tracker_agent(standard, subject, chapter)
+    return jsonify({"response": str(response)})
 
 if __name__ == '__main__':
     app.run(debug=True)
