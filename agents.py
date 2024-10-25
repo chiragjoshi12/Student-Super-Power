@@ -6,7 +6,7 @@ import os
 load_dotenv()
 
 os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
-os.environ["OPENAI_MODEL_NAME"]="gpt-4-0125-preview"
+os.environ["OPENAI_MODEL_NAME"]="gpt-4"
 
 # To Know Agent
 to_know_agent = Agent(
@@ -56,6 +56,38 @@ def learning_tracker_agent(standard, subject, chapter):
     crew = Crew(
         agents=[learning_tracker_agent],
         tasks=[learning_tracker_task],
+        process=Process.sequential
+    )
+
+    result = crew.kickoff()
+    return result
+
+def roadmap_generator_agent(learning_score, student_details):
+    roadmap_agent = Agent(
+        role="Personalized Roadmap Creator",
+        goal=f"Create a personalized learning roadmap based on the student's Learning Score: {learning_score} and Student's basic Details : {student_details}.",
+        backstory=(
+            "With your expertise, you craft tailored learning paths for student according them learning score, "
+            "ensuring they learn efficiently. "
+            "Learning score is a Showing the Initial level of Understanding in any topic or chapter. "
+            "Add link of related course, video, article or something else as resources if required."
+        ),
+        verbose=True
+    )
+    
+    roadmap_task = Task(
+        description=(
+            "Create a personalized learning roadmap for the student based on their Learning Score: {learning_score} and Student's basic Details : {student_details} \n for ipmprove them understanding. "
+            "Your final output should be a step-by-step roadmap for the student to follow. "
+            "Learning score is a Showing the Initial level of Understanding in any topic or chapter"
+        ),
+        expected_output='A personalized learning roadmap outlining next steps for the student according them Learning Score.',
+        agent=roadmap_agent
+    )
+    
+    crew = Crew(
+        agents=[roadmap_agent],
+        tasks=[roadmap_task],
         process=Process.sequential
     )
 
