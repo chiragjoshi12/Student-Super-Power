@@ -1,0 +1,91 @@
+{
+    "languages": [
+      {
+        "id": 1,
+        "name": "Gujarati",
+        "standards": [
+          {
+            "id": 10,
+            "name": "10",
+            "subjects": [
+              {
+                "id": 1,
+                "name": "Maths",
+                "chapters": [
+                  { "id": 101, "name": "Chapter 1: Basic Algebra" },
+                  { "id": 102, "name": "Chapter 2: Geometry Fundamentals" }
+                ]
+              },
+              {
+                "id": 2,
+                "name": "Science",
+                "chapters": [
+                  { "id": 201, "name": "Chapter 1: Fun with Biology" },
+                  { "id": 202, "name": "Chapter 2: Let's Learn Physics" }
+                ]
+              },
+              {
+                "id": 3,
+                "name": "Social Science",
+                "chapters": [
+                  { "id": 301, "name": "Chapter 1: Introduction to History" },
+                  { "id": 302, "name": "Chapter 2: Basics of Geography" }
+                ]
+              }
+            ]
+          },
+          {
+            "id": 11,
+            "name": "11",
+            "subjects": [
+              {
+                "id": 1,
+                "name": "Biology",
+                "chapters": [
+                  { "id": 401, "name": "Chapter 1: Cell Structure" },
+                  { "id": 402, "name": "Chapter 2: Genetics" }
+                ]
+              },
+              {
+                "id": 2,
+                "name": "Chemistry",
+                "chapters": [
+                  { "id": 501, "name": "Chapter 1: Organic Chemistry Basics" },
+                  { "id": 502, "name": "Chapter 2: Inorganic Chemistry" }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "English",
+        "standards": [
+          {
+            "id": 10,
+            "name": "10",
+            "subjects": [
+              {
+                "id": 1,
+                "name": "Maths",
+                "chapters": [
+                  { "id": 101, "name": "Chapter 1: Basic Algebra" },
+                  { "id": 102, "name": "Chapter 2: Geometry Fundamentals" }
+                ]
+              },
+              {
+                "id": 2,
+                "name": "Science",
+                "chapters": [
+                  { "id": 201, "name": "Chapter 1: Fun with Biology" },
+                  { "id": 202, "name": "Chapter 2: Let's Learn Physics" }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
