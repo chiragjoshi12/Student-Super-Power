@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
-from crewai import Agent, Task, Crew, Process
+from crewai import Crew, Process
+from agents import to_know_task, to_know_agent
 import json
 
 app = Flask(__name__)
@@ -30,7 +31,16 @@ def get_chapters():
     
     return subject["chapters"]
 
+@app.route('/to-know-agent', methods=['GET'])
+def call_toKnow_agent():
+    crew = Crew(
+        agents=[to_know_agent],
+        tasks=[to_know_task],
+        process=Process.sequential
+    )
 
+    result = crew.kickoff()
+    return jsonify({"response": str(result)})
 
 
 if __name__ == '__main__':
