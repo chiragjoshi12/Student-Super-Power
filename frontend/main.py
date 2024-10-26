@@ -27,7 +27,7 @@ def login_page():
         subject = st.selectbox("Which subject do you want to learn?", ["Biology", "Physics", "Chemistry", "Maths"])
 
     # Button to submit the answers
-    if st.button("Next Chapter"):
+    if st.button("Next"):
         # Store user inputs in session state
         st.session_state.language = language
         st.session_state.standard = standard
@@ -70,24 +70,20 @@ def chapters_page():
 def chapter_info_page():
     st.title(f"Chapter: {st.session_state.selected_chapter}")
 
-    st.subheader("Chapter Content")
-    st.write("Displaying chapter information...")  # Placeholder for chapter content
+    st.write("🤖 Multiple Agent is ready to guide you...")
 
-    # Initialize session state variables if they don't exist
     if 'questions' not in st.session_state:
         st.session_state.questions = None
     if 'learning_score_response' not in st.session_state:
         st.session_state.learning_score_response = None
     if 'user_answer' not in st.session_state:
         st.session_state.user_answer = ""
-    if 'show_coach_input' not in st.session_state:  # New variable to track input visibility
+    if 'show_coach_input' not in st.session_state:
         st.session_state.show_coach_input = False
 
-    # Create two columns for better layout
     col1, col2 = st.columns([2, 1])
 
     with col1:
-        # Button for Learning Score Tracker
         if st.button("Learning Score Tracker"):
             data = {
                 "standard": st.session_state.standard,
@@ -101,7 +97,6 @@ def chapter_info_page():
                 response_data = response.json()
                 st.session_state.questions = response_data.get("response", [])
                 
-                # Display the quiz question
                 if st.session_state.questions:
                     st.markdown("### Quiz Question")
                     st.write(response_data)
@@ -109,7 +104,6 @@ def chapter_info_page():
                 st.error(f"Failed to update learning score tracker. Status code: {response.status_code}")
                 st.write("Response:", response.text)
 
-        # Only show answer input if we have questions
         if st.session_state.questions:
             st.session_state.user_answer = st.text_input(
                 "Your answer:",
@@ -119,7 +113,6 @@ def chapter_info_page():
             
             if st.button("Submit Answer"):
                 if st.session_state.user_answer:
-                    # Prepare data for the GET Learning Score API call
                     payload = {
                         "quiz": st.session_state.questions,
                         "answer": st.session_state.user_answer
@@ -131,7 +124,7 @@ def chapter_info_page():
                             json=payload
                         )
                         
-                        st.write(learning_score_response.text)  # Print the raw response text
+                        st.write(learning_score_response.text)
                         
                         if learning_score_response.status_code == 200:
                             st.session_state.learning_score_response = learning_score_response.json()
@@ -147,9 +140,7 @@ def chapter_info_page():
                 else:
                     st.warning("Please enter an answer before submitting.")
 
-        # New button for Roadmap Generator
         if st.button("Roadmap Generator"):
-            # Prepare data for the Roadmap Generator API call
             roadmap_data = {
                 "learning_score": st.session_state.learning_score_response,
                 "student_info": st.session_state.get('student_info', {})
@@ -157,12 +148,13 @@ def chapter_info_page():
             
             try:
                 roadmap_response = requests.post(GENERATE_ROADMAP_API_URL, json=roadmap_data)
-                
                 if roadmap_response.status_code == 200:
                     st.success("Roadmap generated successfully!")
-                    # Display the generated roadmap in Markdown format
-                    roadmap_content = roadmap_response.text  # Assuming this is a Markdown formatted string
-                    st.markdown(roadmap_content)  # Directly render the Markdown content
+
+                    response_data = roadmap_response.json()
+                    roadmap_content = response_data.get("response", "")
+                    roadmap_content = roadmap_content.replace("\\n", "\n")
+                    st.markdown(roadmap_content)
                 else:
                     st.error(f"Error generating roadmap. Status code: {roadmap_response.status_code}")
                     st.write("Error response:", roadmap_response.text)
@@ -217,7 +209,7 @@ def chapter_info_page():
 
 # Function to handle the questionnaire
 def to_know_agent_page():
-    st.title("Fetching Knowledge...")
+    st.title("To Know Agent is calling...")
 
     # Call the /to-know-agent API
     response = requests.get(TO_KNOW_AGENT_API_URL)
@@ -234,7 +226,7 @@ def to_know_agent_page():
                 if isinstance(questions, list):
                     # Only display questions if student_info is not set
                     if 'student_info' not in st.session_state:
-                        st.subheader("Please answer the following questions:")
+                        st.subheader("Please answer the following questions so we can know more about you.:")
 
                         with st.form(key='quiz_form'):
                             answers = {}

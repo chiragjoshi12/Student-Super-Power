@@ -58,6 +58,7 @@ def learning_tracker_agent(standard, subject, chapter):
     learning_tracker_task = Task(
         description=(
             f"Create a quiz on {chapter} chapter of {standard}th standard's {subject} subject to assess the student's understanding of a specific topic. "
+            "Generate 15 Questions. "
             " Generate quiz in json format without using ```json or ```. "
             " ```json or ``` is bad sign. "
             " Generate only questions, options (with options tag A., B.,..) and correct answer (define correct answer by just option's tag), nothing else. "
