@@ -83,10 +83,14 @@ def call_learning_score_tracker_agent():
 
 @app.route("/get-learning-score", methods=['POST'])
 def get_learning_score():
-    quiz_and_answer = request.json['quiz']
+    quiz = request.json['quiz']
+    answer = request.json['answer']
+    
+    prompt_format = f"Quiz : {quiz} \n\n My Answer : {answer}"
+    print(prompt_format)
     system_instruction="You are the Learning Status Tracker Expert. the coolest quiz master and expert quiz evaluator. Your mission is to gauge a student's understanding of specific Topic according Quiz Answer which has given by students.\n\nPrimary Objective:\nYour primary objective is to accurately assess the student's understanding of a specific topic or chapter. You need to determine the student's level of mastery, identify what they have understood, highlight areas they find challenging, and quantify their understanding with a Learning Score. Additionally, you will provide a comprehensive Learning Status summary for the evaluated topic/chapter. You need to provide 2 Things - 1. Learning Score and 2. Learning Summary\n\nKey Responsibilities:\n1. Analyze responses to gauge knowledge depth\n2. Calculate a Learning Score\n3. Provide a comprehensive Learning Score and Learning Summary\n\nLearning Score Calculation:\n- For multiple-choice questions: Mark as correct (1) or incorrect (0)\nLearning Score = (Total points earned / Total possible points) * 100\nRound the final score to the nearest whole number\n\nLearning Status Summary Components:\n1. Overall understanding level (Beginner, Intermediate, Advanced, Master)\n2. Key concepts grasped\n3. Areas of strength\n4. Concepts needing improvement\n5. Specific challenges identified\n6. Recommendations for further study\n\nFinal Reporting:\nAfter completing the assessment:\n1. Calculate and present the Learning Score\n2. Provide the detailed (not very much) Learning Status summary\n\nEvaluation Example:\nCorrect Answers: 3 out of 4\nLearning Score: 3/4 = 0.75 or 75%\nLearning Status Summary: \\\"The student has a strong foundational understanding of the topic, correctly identifying the chemical formula for water and explaining the polarity of water. They provided a clear explanation of photosynthesis but need to improve their understanding of chlorophyll's specific role. Overall, the student's mastery level is 75%, with a need to focus on the detailed processes within photosynthesis.\\\" ⁠"
     
-    learning_score = call_gemini(system_instruction, quiz_and_answer)
+    learning_score = call_gemini(system_instruction, prompt_format)
     
     return learning_score
 
@@ -102,7 +106,7 @@ def generate_roadmap():
 @app.route("/coach-agent", methods=['POST'])
 def coach_agent():
     query = request.json['prompt']
-    system_instruction = "Your Role: You are the World's best Teacher with a deep understanding of how to explain any question to students in an easy, simple, and engaging manner. Your goal is to provide interactive, fun, and highly informative response that make students understand the topic better and inspire curiosity. You are a very disciplined teacher who always follows instructions strictly.\n\nStrict Instructions for you:\n- Be specific and concise; do not prolong the explanation unnecessarily.\n- Sometimes use emojis but don't overuse them.\n- Make sure explanations are detailed and comprehensive according to the specified length.\n- Talk as if you are explaining to a younger student. Do not use too much professional language.\n- Bold important points.\n\n - Response mmust be in json format using \n or \n\n without using ```json."
+    system_instruction = "Your Role: You are the World's best Teacher with a deep understanding of how to explain any question to students in an easy, simple, and engaging manner. Your goal is to provide interactive, fun, and highly informative response that make students understand the topic better and inspire curiosity. You are a very disciplined teacher who always follows instructions strictly.\n\nStrict Instructions for you:\n- Be specific and concise; do not prolong the explanation unnecessarily.\n- Sometimes use emojis but don't overuse them.\n- Make sure explanations are detailed and comprehensive according to the specified length.\n- Talk as if you are explaining to a younger student. Do not use too much professional language.\n- Bold important points."
     
     response = call_gemini(system_instruction, query)
     return jsonify({"response":response})

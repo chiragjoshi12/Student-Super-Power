@@ -25,6 +25,17 @@ to_know_task = Task(
         " Questions should be in json format without using ```json."
         " Generate questions only, nothing anything else with that."
         " Mostly our students from 10 to 12 grade."
+        " Generate only 5 questions. "
+        """
+        Questions should be only text formmat.
+        It's format should be like:
+        {
+        "response": [
+            {"question": <questions>},
+            ....
+        ]
+        }
+        """
     ),
     expected_output='Student profile with subjects, hours of study, and learning preferences.',
     agent=to_know_agent
@@ -47,8 +58,23 @@ def learning_tracker_agent(standard, subject, chapter):
     learning_tracker_task = Task(
         description=(
             f"Create a quiz on {chapter} chapter of {standard}th standard's {subject} subject to assess the student's understanding of a specific topic. "
-            " Generate quiz in json format without using ```json."
-            " Generate only questions, options (with options tag A., B.,..) and correct answer (define correct answer by just option's tag), nothing else."
+            " Generate quiz in json format without using ```json or ```. "
+            " ```json or ``` is bad sign. "
+            " Generate only questions, options (with options tag A., B.,..) and correct answer (define correct answer by just option's tag), nothing else. "
+            " Questions Must be in English. "
+            """Questions Must be in below format:
+            {   
+                {
+                    \"Question\": \"Questions...\",
+                    \"Options\": {
+                        \"A.\": \"Option A\",
+                        \"B.\": \"Option B\",
+                        \"C.\": \"Option C\",
+                        \"D.\": \"Option D\"
+                    },
+                }
+            }
+            """
         ),
         expected_output='Preapre Quiz for Check initial Learning Status of student understanding in Particular topic.',
         agent=learning_tracker_agent
