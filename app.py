@@ -1,10 +1,14 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from crewai import Crew, Process
 from agents import *
 import google.generativeai as genai
 import json
 
 app = Flask(__name__)
+CORS(app)
+
+# CORS(app, resources={r"/*": {"origins": "http://localhost:5500"}})
 
 genai.configure(api_key=os.environ["GEMINI_API_KEY"])
 
@@ -94,6 +98,14 @@ def generate_roadmap():
     response = roadmap_generator_agent(learning_score, student_info)
 
     return jsonify({"response":str(response)})
+
+@app.route("/coach-agent", methods=['POST'])
+def coach_agent():
+    query = request.json['prompt']
+    system_instruction = "Your Role: You are the World's best Teacher with a deep understanding of how to explain any question to students in an easy, simple, and engaging manner. Your goal is to provide interactive, fun, and highly informative response that make students understand the topic better and inspire curiosity. You are a very disciplined teacher who always follows instructions strictly.\n\nStrict Instructions for you:\n- Be specific and concise; do not prolong the explanation unnecessarily.\n- Sometimes use emojis but don't overuse them.\n- Make sure explanations are detailed and comprehensive according to the specified length.\n- Talk as if you are explaining to a younger student. Do not use too much professional language.\n- Bold important points.\n\n - Response mmust be in json format using \n or \n\n without using ```json."
+    
+    response = call_gemini(system_instruction, query)
+    return jsonify({"response":response})
 
 if __name__ == '__main__':
     app.run(debug=True)

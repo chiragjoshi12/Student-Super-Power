@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study App</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Welcome to Study App</h1>
+            
+            <div class="form-group">
+                <label for="language">What's your Language?</label>
+                <select id="language" required>
+                    <option value="">Select Language</option>
+                    <option value="Gujarati">Gujarati</option>
+                    <option value="English">English</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="standard">What's Your Standard?</label>
+                <select id="standard" required>
+                    <option value="">Select Standard</option>
+                    <option value="10">10th</option>
+                    <option value="11">11th</option>
+                    <option value="12">12th</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Which Subject?</label>
+                <select id="subject" required>
+                    <option value="">Select Subject</option>
+                    <!-- Options will be populated dynamically -->
+                </select>
+            </div>
+
+            <button onclick="getChapters()">Get Chapters</button>
+        </div>
+
+        <div id="chapters-container" class="chapters-container hidden">
+            <h2>Available Chapters</h2>
+            <div id="chapters-list"></div>
+        </div>
+    </div>
+
+    <script src="../static/js/main.js"></script>
+</body>
+</html>

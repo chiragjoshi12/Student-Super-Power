@@ -119,22 +119,7 @@
                 { "id": 508, "name": "Chapter 8: કાર્બનિક રસાયણ વિજ્ઞાન કેટલાક પાયાના સિદ્ધાંતો અને પદ્ધતિઓ" },
                 { "id": 509, "name": "Chapter 9: હાઇડ્રોકાર્બન" }
               ]
-            },
-            {
-              "id": 2,
-              "name": "Chemistry",
-              "chapters": [
-                { "id": 501, "name": "Chapter 1: રસાયણ વિજ્ઞાન ની કેટલીક પાયાની સંકલ્પનાઓ" },
-                { "id": 502, "name": "Chapter 2: પરમાણુનું બંધારણ" },
-                { "id": 503, "name": "Chapter 3: તત્વોનું વર્ગીકરણ અને ગુણધર્મોમાં આવર્તીતા" },
-                { "id": 504, "name": "Chapter 4: રાસાયણિક બંધન અને આણ્વીય રચના" },
-                { "id": 505, "name": "Chapter 5: ઉષ્માગતિશાસ્ત્ર" },
-                { "id": 506, "name": "Chapter 6: સંતુલન" },
-                { "id": 507, "name": "Chapter 7: રેડોક્ષ પ્રક્રિયાઓ" },
-                { "id": 508, "name": "Chapter 8: કાર્બનિક રસાયણ વિજ્ઞાન કેટલાક પાયાના સિદ્ધાંતો અને પદ્ધતિઓ" },
-                { "id": 509, "name": "Chapter 9: હાઇડ્રોકાર્બન" }
-              ]
-            },              
+            },          
             {
               "id": 3,
               "name": "Maths",
@@ -202,7 +187,7 @@
             },
             {
               "id": 2,
-              "name": "Physics ",
+              "name": "Physics",
               "chapters": [
                 { "id": 901, "name": "Chapter 1: વિદ્યુતભારો અને ક્ષેત્રો" },
                 { "id": 902, "name": "Chapter 2: સ્થિત વિદ્યુત સ્થિતિમાન અને કેપેસિટન્સ" },
@@ -238,7 +223,7 @@
             },
             {
               "id": 4,
-              "name": "Biology ",
+              "name": "Biology",
               "chapters": [
                 { "id": 1101, "name": "1. સપુષ્પી વનસ્પતિઓમાં લિંગી પ્રજનન" },
                 { "id": 1102, "name": "2. માનવ પ્રજનન" },
@@ -446,7 +431,7 @@
             },
             {
               "id": 2,
-              "name": "Physics ",
+              "name": "Physics",
               "chapters": [
                 { "id": 901, "name": "Chapter 1: Charges and Fields" },
                 { "id": 902, "name": "Chapter 2: Electrostatic Constants and Capacitance" },
@@ -482,7 +467,7 @@
             },
             {
               "id": 4,
-              "name": "Biology ",
+              "name": "Biology",
               "chapters": [
                 { "id": 1101, "name": "1. Sexual reproduction in flowering plants" },
                 { "id": 1102, "name": "2. Human Reproduction" },
